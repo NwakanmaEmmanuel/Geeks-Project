@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css">
+
+    <link rel="icon" href="./pic/2nd.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <title>GeeksforGeeks 2.0</title>
+</head>
+<body>
+    <nav>
+        <div class="about-nav">
+            <a href="#">
+                <img src="pic/2nd.png" alt="">
+            </a>
+
+            <ul class="spread">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-times" ></i>
+    </nav>
+    <section>
+        <div class="sections">
+            <aside>
+                <div>
+                    <img src="pic/download.png" alt="" class="section-image">
+                </div>
+                <h2>Contact Us</h2>
+                <p>Contact us for any type of query. GeeksforGeeks 2.0 is always available to answer you</p>
+                <ul class="add">
+                        <li>
+                            <i class="fa-solid fa-phone" ></i>                            
+                            <span>08069289001</span>
+                        </li>
+                    
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>                            
+                            <span>feedback@geeksforgeeks.org</span>
+                        </li>
+                    
+                        <li>
+                            <i class="fa-solid fa-map-marker-alt"></i>                            
+                            <span>Noida, Uttar Pradesh (201305)</span>
+                        </li>
+                </ul>
+                <ul class="buttons">
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <form class="forms">
+                <div class="wrapper">
+                    <input type="text" name="First name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" id="" required>
+                </div>
+                <input type="email" name="Email Address"  placeholder="Your Email Address" required>
+                <textarea name="Message" placeholder="Message"  rows="12" required>
+
+                </textarea>
+                <button>
+                    <a href="">
+                        Send Message
+                    </a>
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="first-footer">
+            <div class="footer-left">
+                <img src="./pic/2nd.png" alt="" class="footer-image">
+                <p>
+                    <i class="fa-solid fa-map-marker-alt" aria-hidden="true"></i>
+                    A-143, 9th Floor, Sovereign Corporate Tower, Sector-136, Noida, Uttar Pradesh - 201305
+                </p>
+            </div>
+            <div class="explore">
+                <h2>Explore</h2>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>        
+            </div>
+            <div class="legal">
+                <h2>Legal</h2>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </div>
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <li>08069289001</li>
+                <li>Noida, Uttar Pradesh (201305)</li>
+                <div class="i-style">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+        <div class="horizon">
+            <div>
+                <p></p>
+                <div class="geeks">
+                    <span class="fonts">GeeksforGeeks 2.0</span><span> © All Right Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', () =>{
+            document.querySelector('nav').classList.toggle
+            ('scroll', window.scrollY > 0)
+        })
+    </script>
+
+    <!-- ----------show/hide nav menu---------- -->
+    <script>
+        const menu = document.querySelector('.spread')
+        const menuBtn = document.querySelector('.fa-bars')
+        const closeBtn = document.querySelector('.fa-times')
+
+        menuBtn.addEventListener('click',() =>{
+            menu.style.display = 'flex';
+            menuBtn.style.display = 'none';
+            closeBtn.style.display = 'inline-block';
+        })
+        closeBtn.addEventListener('click', () =>{
+            menu.style.display = 'none';
+            menuBtn.style.display = 'inline-block'
+            closeBtn.style.display = 'none' 
+        })
+
+    </script>
+</body>
+</html>

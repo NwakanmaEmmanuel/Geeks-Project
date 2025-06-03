@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 17;
+    top: 0;
+}
+
+.scroll{
+    background-color: rgb(214, 205, 205);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+nav .fa-bars{
+    display: none;
+}
+nav .fa-times{
+    display: none;
+}
+
+.about-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline: 70px;
+    gap: 454px;
+    height: 82px;
+    /* flex-direction: column; */
+}
+.spread{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.about-nav img{
+    width: 135px;
+    height: 100px;
+}
+.spread a{
+    color: black;
+    font-weight: bold;
+}
+.spread a:hover{
+    color: green;
+}
+.achievement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 111px;
+    /* padding-inline: 70px; */
+    margin-inline: 70px;
+    margin-top: 80px;
+}
+.icon{
+    width: 470px;
+    height:470px;
+}
+.achievement-right{
+    margin-right: 120px;
+}
+.achievement-right h1{
+    color: #727272;
+    font-size: 2.4rem;
+    margin-bottom: 23px;
+}
+.achievement-right p:first-of-type{
+    line-height: 25px;
+    text-align: justify;
+}
+.sub-row{
+    display: flex;
+    flex-direction: row;
+    flex: 200px 1;
+    gap: 30px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    margin-top: 50px;
+}
+.sub-row article{
+    background-color: #f1e3e3;
+    padding: 25px 50px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 18px;
+
+}
+.col-1{
+    border-radius: 12px;
+    padding: 25px 14px;
+    background-color: green;
+    margin-bottom: 50px;
+}
+.col-2{
+    border-radius: 12px;
+    padding: 25px 14px;
+    background-color: aqua;
+}
+.col-3{
+    border-radius: 12px;
+    padding: 25px 14px;
+    background-color: #a89d9d;
+}
+
+.fa-solid{
+    
+    font-size: 25px;
+}
+.sub-row h2{
+    margin-top: 60px;
+    font-size: 30px;
+}
+.sub-row p{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.icon {
+    position: relative;
+    animation: moveUpDown infinite alternate 2s ease-in-out;
+}
+@keyframes moveUpDown {
+
+    0% {
+
+        transform: translateY(0);
+
+        /* Start position */
+
+    }
+ 
+
+    100% {
+
+        transform: translateY(20px);
+
+        /* End position - adjust as needed */
+
+    }
+}
+.sub-row article:hover{
+    background-color: white;
+    box-shadow:  1px 3rem 3rem 20px #a89d9d;
+
+}
+.flex-page{
+    margin-top: 92px;
+    background-color: #f1e3e3;
+    gap: 50px;
+    padding-bottom: 83px;
+    box-shadow: inset 0 0 3rem rgb(168 150 150);
+}
+.section-text{
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 60px;
+    
+}
+article img{
+    width: 275px;
+    height: 271px;
+    filter: saturate(0);
+    /* object-fit: none; */
+    transform: scale(0.9)
+}
+.teams{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    margin-inline: 70px;
+    /* padding-left: 70px; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 71px;
+
+}
+.teams article{
+    background-color: #ffff;
+    padding: 14px;
+    border: 1px solid white;
+    
+
+}
+.teams h1,p{
+    text-align: center;
+    margin-top: 20px;
+}
+.teams p{
+    color: #1e0e0eb3;
+
+}
+
+.teams article:hover img{
+    filter:saturate(1)
+}
+.teams article:hover{
+    background: transparent;
+    border: 1px solid #cdbfbf;
+    transition: 0.5s ease ;
+}
+
+footer{
+    background-color: #f1e3e3;
+    font-size: 0.9rem;
+    padding: 5rem;
+}
+.first-footer{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin-inline: 70px;
+    /* padding-inline: 120px; */
+}
+.footer-image{
+    width: 200px;
+    object-fit: contain;
+}
+.footer-left p{
+    text-align: start;
+}
+.explore h2{
+    margin-bottom: 30px;
+}
+.explore a{
+    color: black;
+}
+.explore li{
+    margin-bottom: 20px;
+}
+.legal  h2{
+    margin-bottom: 30px;
+}
+.legal li{
+    margin-bottom: 20px;
+}
+.legal a{
+    color: black;
+}
+.contact h2{
+    margin-bottom: 30px;
+}
+.contact li{
+    margin-bottom: 10px;
+}
+.i-style{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+
+}
+.fa-brands{
+    font-size: 20px;
+}
+
+
+.horizon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: 70px;
+}
+.horizon p{
+    height: 0.1px;
+    width: 70rem;
+    background-color: #ffffff;
+}
+.geeks{
+    padding-block: 30px;
+}
+.geeks span{
+    font-size: 12px;
+    font-weight: bold;
+}
+.fonts{
+    color: #137c13;
+}
+@media screen and (max-width: 1024px) {
+    .about-nav {
+        gap: 268px;
+        padding-inline: 70px;
+        justify-content: space-between;
+        flex-direction: initial;
+    }
+    
+   .spread{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: -32rem;
+    right: 49px;
+    /* align-items: flex-start; */
+    width: 20rem;
+    gap: 0;
+   }
+   .spread li{
+    font-size: 17px;
+    width: 100%;
+    display: grid;
+    /* height: 20rem; */
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    animation: animateNavItems 400ms linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+   }
+   @keyframes animateNavItems {
+
+        0% {
+
+            transform: rotateZ(-90deg);
+
+        }
+ 
+
+        100% {
+
+            transform: rotateZ(0);
+
+            opacity: 1;
+
+        }
+
+    }
+ 
+   .spread span{
+    background-color: rgb(208 200 200);
+    /* padding: 62px 111px; */
+    display: grid;
+    /* width: 100%; */
+    /* height: 100%; */
+    place-content: center;
+    font-size: 15px;  
+    }
+    .spread a{
+    background-color: rgb(208 200 200);
+    font-weight: bolder;
+    display: grid;
+    width: 100%;
+    height: 8rem;
+    place-content: center;
+    font-size: 15px;
+    }
+
+   
+
+
+
+
+   nav .fa-solid{
+    position: absolute;
+    right: 32px;
+    top: 30px;
+    cursor: pointer;
+   }
+   nav .fa-bars{
+    display: block;
+    }
+    nav .fa-times{
+        display: none;
+    }
+
+   .btn{
+        font-size: 10px;
+   }
+    .achievement{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .achievement-right {
+        margin-right: 2px;
+    }
+    .achievement-right p:first-of-type {
+        font-size: 16px;
+        line-height: 35px;
+
+    }
+    .icon {
+        width: 868px;
+        height: 809px;
+        margin-top: -88px;
+    }
+    .teams {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .first-footer{
+        gap: 7rem;
+    }
+    .horizon p{
+        width: 50rem;
+    }
+
+
+    
+}
+@media screen and (max-width: 600px) {
+    .spread{
+        gap: 60px;
+    }
+    .spread a{
+        font-size: 19px;
+    }
+    .about-nav{
+        gap: 54px;
+        height: 151px;
+        padding-inline: 0px;
+    }
+    .about-nav img {
+        width: 270px;
+        height: 197px;
+    }
+    .achievement{
+        padding-left: 348px;
+
+    }
+    .achievement-right h1 {
+        font-size: 3.4rem;
+
+    }
+    .achievement-right p:first-of-type {
+        font-size: 25px;
+        line-height: 41px;
+    }
+    .teams {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .teams article{
+        padding: 70px;
+    }
+    .flex-page{
+        width: 957px;
+    }
+    article img {
+    width: 275px;
+    height: 317px;
+    padding-bottom: 51px;
+    transform: scale(1.5);  
+    }
+    .teams h1, p {
+        font-size: 26px;
+    }
+    .teams p{
+        color: #1e0e0eb3;
+
+    }
+    footer{
+        width: 159%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .first-footer{
+        grid-template-columns: 1fr;
+    }
+    .footer-left p {
+    text-align: center;
+    }
+    .i-style{
+        justify-content: center;
+    }
+    .geeks span {
+    font-size: 20px;
+    }
+
+
+
+}
